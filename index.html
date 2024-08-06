@@ -7,18 +7,17 @@
     <link rel="stylesheet" href="index.css">
     <Title>Apple</Title>
     
- 
    <link rel="stylesheet" href="node_modules\bootstrap-icons\font\bootstrap-icons.css">  
  </head>
  <body>
   <header>
   <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-dark">
-    <div class=" container  ">
+    <div class="container ">
       
       <a class="navbar-brand text-light" href="#"><i class="bi bi-apple"></i></a>
       
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav justify-content-between w-100 mb-2 mb-lg-0">
+        <ul class="navbar-nav justify-content-between w-100 mb-2 mb-lg-0 ">
          <li class=" d-flex justify-content-between nav-item ms-3">
             <a class="nav-link active" aria-current="page" href="#">Store</a>
           </li>
@@ -52,29 +51,43 @@
           <li class="nav-item  ">
             <a class="nav-link" href="#">Support</a>
           </li>
+        </ul>
          
       </div>
-      <ul class="navbar-nav justify-content-between w-100 mb-2 mb-lg-0"><li class="nav-item  ">
+      <div>
+      <ul class=" search-bag navbar navbar-nav navbar-dark bg-dark" id="nav-links">
+        <li class="nav-item  ">
         <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
-      </li>
-      <li class="nav-item  ">
+        </li>
+        <li class="nav-item  ">
         <a class="nav-link" href="#"><i class="bi  bi-bag"></i></a>
-      </li></ul>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        </li>
+        <li class="nav-item  humberger-menu ">
+        <a class="nav-link" href="#"><i class="bi  bi-list"></i></a>
+        </li>
+      </ul>
+   </div>
+    
+
+
+    <!--
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-     
+     -->
     </div>
   </nav>
 </header>
   
-  <main>
+  <!--<main>
     <section class="img-1" >
-      <img src="images/img_1.jpg" alt="Vision-pro" class=" img-fluid ">
+      <img src="images\img_1.jpg" alt="Vision-pro" class=" img-fluid ">
     </section>
-  </main>
-   
+  </main>-->
+    
    <SCript src="popper.min.JS"></SCript> 
     <script src="bootstrap.js"></script> 
+    <script src="js/index.js"></script> 
  </body>  
  </html>
