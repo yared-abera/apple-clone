@@ -1,22 +1,7 @@
-//event handling for humbergure menu
-// const humberger_menu = document.getElementsByClassName("humberger-menu")[0];
-
-// humberger_menu.addEventListener('click', function() {
-
-
-//     let x = document.createElement("div");
-//     x.setAttribute("class", "div");
-
-//     // Optionally append the created element to the DOM, for example, to the body or another container element.
-//     document.body.appendChild(x);
-//   });
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Create the hamburger menu button
     const hamburgerMenu = document.getElementsByClassName('humberger-menu')[0];
-
-
-    // Create the menu container and nav items list within a function
+ // Create the menu container and nav items list within a function
     function createMenu() {
         // Create the menu container
         const menuContainer = document.createElement('div');
@@ -45,201 +30,37 @@ document.addEventListener('DOMContentLoaded', function () {
             const a = document.createElement('a');
             a.href = '#';
             a.textContent = item;
+        
+           
+            //create the option button
+        const option_button = document.createElement('div');
+        option_button.className = 'option-button ';
+        option_button.innerHTML = '<i class="bi bi-chevron-right text-light"></i>';
+        li.appendChild(option_button);
             li.appendChild(a);
             navItems.appendChild(li);
+
         });
 
         // Append the nav items list to the menu container
         menuContainer.appendChild(navItems);
 
-        return menuContainer;
+        // Add click event to the x button
+        x_button.addEventListener('click', function () {
+            menuContainer.style.display = 'none';
+        });
+
+        // Add mouseover and mouseout event listeners
+        li.addEventListener('mouseover', function () {
+            li.style.backgroundColor = 'rgb(12, 132, 237)';
+        });
+        li.addEventListener('mouseout', function () {
+            li.style.backgroundColor = ''; // Reset the background color
+        });
+       return menuContainer;
     }
-
-    // Variable to store the menu container
-    let menuContainer;
-    li = document.getElementsByTagName('li')[0];
-    li.addEventListener('mouseover', function () {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        Window.alert('hi');
-    });
+    
+   
 
 
     // Add click event to the hamburger menu button
