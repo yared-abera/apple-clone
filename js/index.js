@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     let menuContainer;
-    
+
 
     function createMenu() {
         // Create the menu container
@@ -16,15 +16,14 @@ document.addEventListener('DOMContentLoaded', function () {
         menuContainer.id = 'menu';
         menuContainer.className = 'menu-container';
         document.body.appendChild(menuContainer);
-
         //create the x button-container
         const x_button_container = document.createElement('div');
-        x_button_container.className = ' x-button-container justify-content-sm-end ';
+        x_button_container.className ='x-button-container justify-content-sm-end ';
         menuContainer.appendChild(x_button_container);
         //create the chevron button
         const chevron_button = document.createElement('i');
         chevron_button.className = 'bi bi-chevron-left text-light  hi ';
-        
+
         x_button_container.appendChild(chevron_button);
 
         //create the x button
@@ -34,11 +33,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Create the nav items list
         const navItems = document.createElement('ul');
-        navItems.className = 'nav-items'; 
+        navItems.className = 'nav-items';
 
 
 
-        const items = ['Store', 'Mac', 'ipad', 'iphone', 'Watch', 'Vision', 'Airpods', 'Tv&Home', 'Entertainment', ' Accessories','Support' ];
+        const items = ['Store', 'Mac', 'ipad', 'iphone', 'Watch', 'Vision', 'Airpods', 'Tv&Home', 'Entertainment', ' Accessories', 'Support'];
         items.forEach(function (item) {
             const li = document.createElement('li');
             li.id =item;
@@ -46,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
             a.href = '#';
             a.textContent = item;
 
-           
+
             //create the option button
             const option_button = document.createElement('div');
             option_button.className = 'option-button ';
@@ -57,17 +56,106 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Add mouseover and mouseout event listeners
             li.addEventListener('mouseover', function () {
-                option_button.style.display = 'flex'; 
+                option_button.style.display = 'flex';
             });
             li.addEventListener('mouseout', function () {
-                option_button.style.display = ''; 
+                option_button.style.display = '';
             });
 
-             // Add click event to the li element
-        li.addEventListener('click', function () {
-            alert( item + 'clicked');
-       
-        });
+            // Add click event to the li element
+            /*li.addEventListener('click', function (item) {
+                const  listContainer= document.createElement('div');
+                listContainer.className = 'list-container d-flex   ';
+                document.body.appendChild(listContainer);
+                 listitem1= document.createElement('div');
+                listitem1.className = 'list-content-item1 flex-basis-100 text-center text-light';
+                listContainer.appendChild(listitem1);
+                listitem2= document.createElement('div');
+                listitem2.className = 'list-content-item2';
+                listContainer.appendChild(listitem2);
+                 listitem3= document.createElement('div');
+                listitem3.className = 'list-content-item3';
+                listContainer.appendChild(listitem3);
+                
+               
+                  listitem1.innerHTML= 'hello Store';
+
+                // else if(item=='Mac'){
+                //     alert('hello Mac')
+                // }
+                // else if(item=='ipad'){
+                //     alert('hello ipad')
+                // }
+                // else if(item=='iphone'){
+                //     alert('hello iphone')
+                // }
+                // else if(item=='Watch'){
+                //     alert('hello Watch')
+                // }
+                // else if(item=='Vision'){
+
+                //     alert('hello Vision')
+                // }else {
+
+                //     alert('hello Airpods')
+                // }
+              
+             });
+             */
+
+             li.addEventListener('click', function () {
+                const listContainer = document.createElement('div');
+                listContainer.className = 'list-container w-100 bg-black d-flex';
+                document.body.appendChild(listContainer);
+            
+                const listitem1 = document.createElement('div');
+                listitem1.className = 'list-content-item1 flex-basis-100';
+                listContainer.appendChild(listitem1);
+            
+                const listitem2 = document.createElement('div');
+                listitem2.className = 'list-content-item2';
+                listContainer.appendChild(listitem2);
+            
+                const listitem3 = document.createElement('div');
+                listitem3.className = 'list-content-item3';
+                listContainer.appendChild(listitem3);
+            
+                // Check the clicked item based on its ID or text content
+                if (this.id === 'Store') {
+                    const htmlContent = `
+            <h1>Welcome to My Website</h1>
+            <p>This is a simple paragraph.</p>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        `; 
+         // Assuming 'li' has an ID like 'Store'
+                    listitem1.innerHTML= 
+                    htmlContent;
+                   
+                } else if (this.id === 'Mac') {
+                    listitem1.innerText = 'Hello Mac';
+                } else if (this.id === 'ipad') {
+                    listitem1.innerHTML ='';
+                    listitem1.innerHTML = 'Hello iPad';
+                } else if (this.id === 'iphone') {
+                    listitem1.innerHTML ='  ';
+                    listitem1.innerText = 'Hello iPhone';
+                } else if (this.id === 'Watch') {
+                    listitem1.innerHTML = 'Hello Watch';
+                } else if (this.id === 'Vision') {
+                    listitem1.innerHTML = 'Hello Vision';
+                } else if (this.id === 'Airpods') {
+                    listitem1.innerHTML = 'Hello AirPods';
+                } else {
+                    listitem1.innerHTML = 'Hello, ' + this.id;
+                }
+            });
+            
+
+            
 
         });
 
@@ -79,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function () {
             menuContainer.style.display = 'none';
         });
 
-       
+
 
         return menuContainer;
     }
@@ -91,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!menuContainer) {
             // Create the menu container only once
             menuContainer = createMenu();
-             ;
+            ;
         }
 
         // Toggle the display of the menu
@@ -100,23 +188,18 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             menuContainer.style.display = 'none';
         }
+
     });
-   
 
-      //add click event to all li elements
-    //   const store = document.getElementById('Store');
-    //   const mac = document.getElementById('Mac');
-    //   const ipad = document.getElementById('ipad');
-    //   const iphone = document.getElementById('iphone');
-    //   const watch = document.getElementById('Watch');
-    //   const vision = document.getElementById('Vision');
-    //   const airpods = document.getElementById('Airpods');
-    //   const tv_home = document.getElementById('Tv&Home');
-    //   const entertainment = document.getElementById('Entertainment');
-    //   const accessories = document.getElementById(' Accessories');
-    //   const support = document.getElementById('Support');
 
-      
+    //add click event to all li elements
+    
+   function item(){
+        alert('hello Store');
+    }
+
+    
+
 
 
 
