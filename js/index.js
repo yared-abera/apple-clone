@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', function () {
         // Create the menu container
         menuContainer = document.createElement('div');
         menuContainer.id = 'menu';
-        menuContainer.className = 'menu-container'
+        menuContainer.className = 'menu-container';
         document.body.appendChild(menuContainer);
 
         //create the x button-container
         const x_button_container = document.createElement('div');
-        x_button_container.className = 'x-button-container';
+        x_button_container.className = ' x-button-container justify-content-sm-end ';
         menuContainer.appendChild(x_button_container);
         //create the chevron button
         const chevron_button = document.createElement('i');
@@ -38,14 +38,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-        const items = ['Store', 'Mac', 'ipad', 'iphone', 'Airpods', 'Watch', 'Vision', 'Airpods', 'Tv&Home', 'Entertainment', ' Accessories'];
+        const items = ['Store', 'Mac', 'ipad', 'iphone', 'Watch', 'Vision', 'Airpods', 'Tv&Home', 'Entertainment', ' Accessories','Support' ];
         items.forEach(function (item) {
             const li = document.createElement('li');
+            li.id =item;
             const a = document.createElement('a');
             a.href = '#';
             a.textContent = item;
 
-
+           
             //create the option button
             const option_button = document.createElement('div');
             option_button.className = 'option-button ';
@@ -62,6 +63,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 option_button.style.display = ''; 
             });
 
+             // Add click event to the li element
+        li.addEventListener('click', function () {
+            alert( item + 'clicked');
+       
+        });
+
         });
 
         // Append the nav items list to the menu container
@@ -71,6 +78,8 @@ document.addEventListener('DOMContentLoaded', function () {
         x_button.addEventListener('click', function () {
             menuContainer.style.display = 'none';
         });
+
+       
 
         return menuContainer;
     }
@@ -92,8 +101,34 @@ document.addEventListener('DOMContentLoaded', function () {
             menuContainer.style.display = 'none';
         }
     });
-});
+   
+
+      //add click event to all li elements
+    //   const store = document.getElementById('Store');
+    //   const mac = document.getElementById('Mac');
+    //   const ipad = document.getElementById('ipad');
+    //   const iphone = document.getElementById('iphone');
+    //   const watch = document.getElementById('Watch');
+    //   const vision = document.getElementById('Vision');
+    //   const airpods = document.getElementById('Airpods');
+    //   const tv_home = document.getElementById('Tv&Home');
+    //   const entertainment = document.getElementById('Entertainment');
+    //   const accessories = document.getElementById(' Accessories');
+    //   const support = document.getElementById('Support');
+
+      
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+}); 
