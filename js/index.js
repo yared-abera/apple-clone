@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     let menuContainer;
+    
 
     function createMenu() {
         // Create the menu container
@@ -20,14 +21,20 @@ document.addEventListener('DOMContentLoaded', function () {
         const x_button_container = document.createElement('div');
         x_button_container.className = 'x-button-container';
         menuContainer.appendChild(x_button_container);
+        //create the chevron button
+        const chevron_button = document.createElement('i');
+        chevron_button.className = 'bi bi-chevron-left text-light  hi ';
+        
+        x_button_container.appendChild(chevron_button);
+
         //create the x button
         const x_button = document.createElement('i');
-        x_button.className = 'bi bi-x text-light x-button';
+        x_button.className = 'bi bi-x text-light x-button ';
         x_button_container.appendChild(x_button);
 
         // Create the nav items list
         const navItems = document.createElement('ul');
-        navItems.className = 'nav-items';
+        navItems.className = 'nav-items'; 
 
 
 
