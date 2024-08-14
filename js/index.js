@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     let menuContainer;
-
+    let listContainer
 
     function createMenu() {
         // Create the menu container
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
         menuContainer.appendChild(x_button_container);
         //create the chevron button
         const chevron_button = document.createElement('i');
-        chevron_button.className = 'bi bi-chevron-left text-light  hi ';
+        chevron_button.className = 'bi bi-chevron-left text-light  chevron_button-left';
 
         x_button_container.appendChild(chevron_button);
 
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const a = document.createElement('a');
             a.href = '#';
             a.textContent = item;
-
+      
 
             //create the option button
             const option_button = document.createElement('div');
@@ -63,53 +63,17 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             // Add click event to the li element
-            /*li.addEventListener('click', function (item) {
-                const  listContainer= document.createElement('div');
-                listContainer.className = 'list-container d-flex   ';
-                document.body.appendChild(listContainer);
-                 listitem1= document.createElement('div');
-                listitem1.className = 'list-content-item1 flex-basis-100 text-center text-light';
-                listContainer.appendChild(listitem1);
-                listitem2= document.createElement('div');
-                listitem2.className = 'list-content-item2';
-                listContainer.appendChild(listitem2);
-                 listitem3= document.createElement('div');
-                listitem3.className = 'list-content-item3';
-                listContainer.appendChild(listitem3);
-                
-               
-                  listitem1.innerHTML= 'hello Store';
-
-                // else if(item=='Mac'){
-                //     alert('hello Mac')
-                // }
-                // else if(item=='ipad'){
-                //     alert('hello ipad')
-                // }
-                // else if(item=='iphone'){
-                //     alert('hello iphone')
-                // }
-                // else if(item=='Watch'){
-                //     alert('hello Watch')
-                // }
-                // else if(item=='Vision'){
-
-                //     alert('hello Vision')
-                // }else {
-
-                //     alert('hello Airpods')
-                // }
-              
-             });
-             */
-
+            
              li.addEventListener('click', function () {
-                const listContainer = document.createElement('div');
-                listContainer.className = 'list-container w-100 bg-black d-flex';
+                chevron_button.style.display='flex';
+                listContainer = document.createElement('div');
+                listContainer.className = 'list-container w-100 bg-black';
                 document.body.appendChild(listContainer);
+                x_button_container.style.display ='block';
+                listContainer.appendChild(x_button_container);
             
                 const listitem1 = document.createElement('div');
-                listitem1.className = 'list-content-item1 flex-basis-100';
+                listitem1.className = 'list-content-item1 ';
                 listContainer.appendChild(listitem1);
             
                 const listitem2 = document.createElement('div');
@@ -122,18 +86,19 @@ document.addEventListener('DOMContentLoaded', function () {
             
                 // Check the clicked item based on its ID or text content
                 if (this.id === 'Store') {
-                    const htmlContent = `
-            <h1>Welcome to My Website</h1>
-            <p>This is a simple paragraph.</p>
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
+                    const listitem1_content= `
+            <ul class="text-light  ">
+                <li><h2>Shop the Latest</h2></li>
+                <li><h2>Mac</h2></li>
+                <li><h2>Ipad</h2></li>
+                <li><h2>Iphone</h2></li>
+                <li><h2>Apple Watch</h2></li>
+                <li><h2>Apple Vision Pro</h2></li>
+                <li><h2>Accessories</h2></li>
             </ul>
         `; 
-         // Assuming 'li' has an ID like 'Store'
-                    listitem1.innerHTML= 
-                    htmlContent;
+           listitem1.innerHTML= 
+           listitem1_content;
                    
                 } else if (this.id === 'Mac') {
                     listitem1.innerText = 'Hello Mac';
@@ -164,7 +129,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Add click event to the x button
         x_button.addEventListener('click', function () {
+           if(listContainer) {listContainer.style.display = 'none';}
             menuContainer.style.display = 'none';
+           
         });
 
 
@@ -184,9 +151,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Toggle the display of the menu
         if (menuContainer.style.display === 'none' || menuContainer.style.display === '') {
+           
+
             menuContainer.style.display = 'block';
         } else {
             menuContainer.style.display = 'none';
+            
         }
 
     });
