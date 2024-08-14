@@ -23,7 +23,11 @@ document.addEventListener('DOMContentLoaded', function () {
         //create the chevron button
         const chevron_button = document.createElement('i');
         chevron_button.className = 'bi bi-chevron-left text-light  chevron_button-left';
-
+        //handling event of chevron button
+        chevron_button.addEventListener('click', function () {
+            listContainer.style.display = 'none';
+            menuContainer=createMenu();
+        })
         x_button_container.appendChild(chevron_button);
 
         //create the x button
@@ -66,56 +70,452 @@ document.addEventListener('DOMContentLoaded', function () {
             
              li.addEventListener('click', function () {
                 chevron_button.style.display='flex';
+                menuContainer.style.display='none';
+                // Create the list container
                 listContainer = document.createElement('div');
-                listContainer.className = 'list-container w-100 bg-black';
+                listContainer.className = 'list-container w-100 ';
                 document.body.appendChild(listContainer);
-                x_button_container.style.display ='block';
+                x_button_container.style.display ='flex';
                 listContainer.appendChild(x_button_container);
             
                 const listitem1 = document.createElement('div');
                 listitem1.className = 'list-content-item1 ';
                 listContainer.appendChild(listitem1);
-            
+               const listContainer_2_3 = document.createElement('div'); 
+                listContainer.appendChild(listContainer_2_3);
+                listContainer_2_3.className = 'list-content-item2-3';
                 const listitem2 = document.createElement('div');
                 listitem2.className = 'list-content-item2';
-                listContainer.appendChild(listitem2);
-            
+                listContainer_2_3.appendChild(listitem2);
+                
                 const listitem3 = document.createElement('div');
                 listitem3.className = 'list-content-item3';
-                listContainer.appendChild(listitem3);
+                listContainer_2_3.appendChild(listitem3);
             
                 // Check the clicked item based on its ID or text content
                 if (this.id === 'Store') {
-                    const listitem1_content= `
-            <ul class="text-light  ">
-                <li><h2>Shop the Latest</h2></li>
-                <li><h2>Mac</h2></li>
-                <li><h2>Ipad</h2></li>
-                <li><h2>Iphone</h2></li>
-                <li><h2>Apple Watch</h2></li>
-                <li><h2>Apple Vision Pro</h2></li>
-                <li><h2>Accessories</h2></li>
+                 const listitem1_content= `
+           <ul class="text-light ">
+                <li> Shop the Latest </li>
+                <li> Mac </li>
+                <li> Ipad </li>
+                <li> Iphone </li>
+                <li> Apple Watch </li>
+                <li> Apple Vision Pro </li>
+                <li> Accessories </li>
             </ul>
         `; 
+        const listitem2_content= `
+        <ul class="text-light ">
+             <li class="text-secondary">Quick links</li>
+             <li>Find a Store</li>
+             <li>Orderstatus</li>
+             <li>Apple Trade In</li>
+             <li>Financing</li>
+             <li>College Student Offer</li>
+         </ul>
+     `; 
+     const listitem3_content= `
+     <ul class="text-light ">
+          <li class="text-secondary">Shop Special Stores</li>
+          <li>Certified Refurbished</li>
+          <li>Education</li>
+          <li>Business</li>
+          <li>Veterans and Military</li>
+          <li>Government</li>
+      </ul>
+  `; 
            listitem1.innerHTML= 
            listitem1_content;
+           listitem2.innerHTML= 
+           listitem2_content;
+           listitem3.innerHTML= 
+           listitem3_content;
                    
                 } else if (this.id === 'Mac') {
-                    listitem1.innerText = 'Hello Mac';
+                    const listitem1_content= `
+                    <ul class="text-light ">
+                         <li> Shop the Latest </li>
+                         <li> Mac </li>
+                         <li> Ipad </li>
+                         <li> Iphone </li>
+                         <li> Apple Watch </li>
+                         <li> Apple Vision Pro </li>
+                         <li> Accessories </li>
+                     </ul>
+                 `; 
+                 const listitem2_content= `
+                 <ul class="text-light ">
+                      <li class="text-secondary">Quick links</li>
+                      <li>Find a Store</li>
+                      <li>Orderstatus</li>
+                      <li>Apple Trade In</li>
+                      <li>Financing</li>
+                      <li>College Student Offer</li>
+                  </ul>
+              `; 
+              const listitem3_content= `
+              <ul class="text-light ">
+                   <li class="text-secondary">Shop Special Stores</li>
+                   <li>Certified Refurbished</li>
+                   <li>Education</li>
+                   <li>Business</li>
+                   <li>Veterans and Military</li>
+                   <li>Government</li>
+               </ul>
+           `; 
+                    listitem1.innerHTML= 
+                    listitem1_content;
+                    listitem2.innerHTML= 
+                    listitem2_content;
+                    listitem3.innerHTML= 
+                    listitem3_content;
                 } else if (this.id === 'ipad') {
-                    listitem1.innerHTML ='';
-                    listitem1.innerHTML = 'Hello iPad';
+                    const listitem1_content= `
+                    <ul class="text-light ">
+                         <li> Shop the Latest </li>
+                         <li> Mac </li>
+                         <li> Ipad </li>
+                         <li> Iphone </li>
+                         <li> Apple Watch </li>
+                         <li> Apple Vision Pro </li>
+                         <li> Accessories </li>
+                     </ul>
+                 `; 
+                 const listitem2_content= `
+                 <ul class="text-light ">
+                      <li class="text-secondary">Quick links</li>
+                      <li>Find a Store</li>
+                      <li>Orderstatus</li>
+                      <li>Apple Trade In</li>
+                      <li>Financing</li>
+                      <li>College Student Offer</li>
+                  </ul>
+              `; 
+              const listitem3_content= `
+              <ul class="text-light ">
+                   <li class="text-secondary">Shop Special Stores</li>
+                   <li>Certified Refurbished</li>
+                   <li>Education</li>
+                   <li>Business</li>
+                   <li>Veterans and Military</li>
+                   <li>Government</li>
+               </ul>
+           `; 
+                    listitem1.innerHTML= 
+                    listitem1_content;
+                    listitem2.innerHTML= 
+                    listitem2_content;
+                    listitem3.innerHTML= 
+                    listitem3_content;
                 } else if (this.id === 'iphone') {
-                    listitem1.innerHTML ='  ';
-                    listitem1.innerText = 'Hello iPhone';
+                    const listitem1_content= `
+                    <ul class="text-light ">
+                         <li> Shop the Latest </li>
+                         <li> Mac </li>
+                         <li> Ipad </li>
+                         <li> Iphone </li>
+                         <li> Apple Watch </li>
+                         <li> Apple Vision Pro </li>
+                         <li> Accessories </li>
+                     </ul>
+                 `; 
+                 const listitem2_content= `
+                 <ul class="text-light ">
+                      <li class="text-secondary">Quick links</li>
+                      <li>Find a Store</li>
+                      <li>Orderstatus</li>
+                      <li>Apple Trade In</li>
+                      <li>Financing</li>
+                      <li>College Student Offer</li>
+                  </ul>
+              `; 
+              const listitem3_content= `
+              <ul class="text-light ">
+                   <li class="text-secondary">Shop Special Stores</li>
+                   <li>Certified Refurbished</li>
+                   <li>Education</li>
+                   <li>Business</li>
+                   <li>Veterans and Military</li>
+                   <li>Government</li>
+               </ul>
+           `; 
+                    listitem1.innerHTML= 
+                    listitem1_content;
+                    listitem2.innerHTML= 
+                    listitem2_content;
+                    listitem3.innerHTML= 
+                    listitem3_content;
                 } else if (this.id === 'Watch') {
-                    listitem1.innerHTML = 'Hello Watch';
+                    const listitem1_content= `
+                    <ul class="text-light ">
+                         <li> Shop the Latest </li>
+                         <li> Mac </li>
+                         <li> Ipad </li>
+                         <li> Iphone </li>
+                         <li> Apple Watch </li>
+                         <li> Apple Vision Pro </li>
+                         <li> Accessories </li>
+                     </ul>
+                 `; 
+                 const listitem2_content= `
+                 <ul class="text-light ">
+                      <li class="text-secondary">Quick links</li>
+                      <li>Find a Store</li>
+                      <li>Orderstatus</li>
+                      <li>Apple Trade In</li>
+                      <li>Financing</li>
+                      <li>College Student Offer</li>
+                  </ul>
+              `; 
+              const listitem3_content= `
+              <ul class="text-light ">
+                   <li class="text-secondary">Shop Special Stores</li>
+                   <li>Certified Refurbished</li>
+                   <li>Education</li>
+                   <li>Business</li>
+                   <li>Veterans and Military</li>
+                   <li>Government</li>
+               </ul>
+           `; 
+                    listitem1.innerHTML= 
+                    listitem1_content;
+                    listitem2.innerHTML= 
+                    listitem2_content;
+                    listitem3.innerHTML= 
+                    listitem3_content;
                 } else if (this.id === 'Vision') {
-                    listitem1.innerHTML = 'Hello Vision';
+                    const listitem1_content= `
+                    <ul class="text-light ">
+                         <li> Shop the Latest </li>
+                         <li> Mac </li>
+                         <li> Ipad </li>
+                         <li> Iphone </li>
+                         <li> Apple Watch </li>
+                         <li> Apple Vision Pro </li>
+                         <li> Accessories </li>
+                     </ul>
+                 `; 
+                 const listitem2_content= `
+                 <ul class="text-light ">
+                      <li class="text-secondary">Quick links</li>
+                      <li>Find a Store</li>
+                      <li>Orderstatus</li>
+                      <li>Apple Trade In</li>
+                      <li>Financing</li>
+                      <li>College Student Offer</li>
+                  </ul>
+              `; 
+              const listitem3_content= `
+              <ul class="text-light ">
+                   <li class="text-secondary">Shop Special Stores</li>
+                   <li>Certified Refurbished</li>
+                   <li>Education</li>
+                   <li>Business</li>
+                   <li>Veterans and Military</li>
+                   <li>Government</li>
+               </ul>
+           `; 
+                    listitem1.innerHTML= 
+                    listitem1_content;
+                    listitem2.innerHTML= 
+                    listitem2_content;
+                    listitem3.innerHTML= 
+                    listitem3_content;
                 } else if (this.id === 'Airpods') {
-                    listitem1.innerHTML = 'Hello AirPods';
-                } else {
-                    listitem1.innerHTML = 'Hello, ' + this.id;
+                    const listitem1_content= `
+                    <ul class="text-light ">
+                         <li> Shop the Latest </li>
+                         <li> Mac </li>
+                         <li> Ipad </li>
+                         <li> Iphone </li>
+                         <li> Apple Watch </li>
+                         <li> Apple Vision Pro </li>
+                         <li> Accessories </li>
+                     </ul>
+                 `; 
+                 const listitem2_content= `
+                 <ul class="text-light ">
+                      <li class="text-secondary">Quick links</li>
+                      <li>Find a Store</li>
+                      <li>Orderstatus</li>
+                      <li>Apple Trade In</li>
+                      <li>Financing</li>
+                      <li>College Student Offer</li>
+                  </ul>
+              `; 
+              const listitem3_content= `
+              <ul class="text-light ">
+                   <li class="text-secondary">Shop Special Stores</li>
+                   <li>Certified Refurbished</li>
+                   <li>Education</li>
+                   <li>Business</li>
+                   <li>Veterans and Military</li>
+                   <li>Government</li>
+               </ul>
+           `; 
+                    listitem1.innerHTML= 
+                    listitem1_content;
+                    listitem2.innerHTML= 
+                    listitem2_content;
+                    listitem3.innerHTML= 
+                    listitem3_content;
+                } else if(this.id === 'Tv & Home') {
+                    const listitem1_content= `
+                    <ul class="text-light ">
+                         <li> Shop the Latest </li>
+                         <li> Mac </li>
+                         <li> Ipad </li>
+                         <li> Iphone </li>
+                         <li> Apple Watch </li>
+                         <li> Apple Vision Pro </li>
+                         <li> Accessories </li>
+                     </ul>
+                 `; 
+                 const listitem2_content= `
+                 <ul class="text-light ">
+                      <li class="text-secondary">Quick links</li>
+                      <li>Find a Store</li>
+                      <li>Orderstatus</li>
+                      <li>Apple Trade In</li>
+                      <li>Financing</li>
+                      <li>College Student Offer</li>
+                  </ul>
+              `; 
+              const listitem3_content= `
+              <ul class="text-light ">
+                   <li class="text-secondary">Shop Special Stores</li>
+                   <li>Certified Refurbished</li>
+                   <li>Education</li>
+                   <li>Business</li>
+                   <li>Veterans and Military</li>
+                   <li>Government</li>
+               </ul>
+           `; 
+                    listitem1.innerHTML= 
+                    listitem1_content;
+                    listitem2.innerHTML= 
+                    listitem2_content;
+                    listitem3.innerHTML= 
+                    listitem3_content;
+                }
+
+                else if(this.id === 'Entertainment') {
+                    const listitem1_content= `
+                    <ul class="text-light ">
+                         <li> Shop the Latest </li>
+                         <li> Mac </li>
+                         <li> Ipad </li>
+                         <li> Iphone </li>
+                         <li> Apple Watch </li>
+                         <li> Apple Vision Pro </li>
+                         <li> Accessories </li>
+                     </ul>
+                 `; 
+                 const listitem2_content= `
+                 <ul class="text-light ">
+                      <li class="text-secondary">Quick links</li>
+                      <li>Find a Store</li>
+                      <li>Orderstatus</li>
+                      <li>Apple Trade In</li>
+                      <li>Financing</li>
+                      <li>College Student Offer</li>
+                  </ul>
+              `; 
+              const listitem3_content= `
+              <ul class="text-light ">
+                   <li class="text-secondary">Shop Special Stores</li>
+                   <li>Certified Refurbished</li>
+                   <li>Education</li>
+                   <li>Business</li>
+                   <li>Veterans and Military</li>
+                   <li>Government</li>
+               </ul>
+           `; 
+                    listitem1.innerHTML= 
+                    listitem1_content;
+                    listitem2.innerHTML= 
+                    listitem2_content;
+                    listitem3.innerHTML= 
+                    listitem3_content;
+                }
+                else if(this.id === 'Accessories') {
+                    const listitem1_content= `
+                    <ul class="text-light ">
+                         <li> Shop the Latest </li>
+                         <li> Mac </li>
+                         <li> Ipad </li>
+                         <li> Iphone </li>
+                         <li> Apple Watch </li>
+                         <li> Apple Vision Pro </li>
+                         <li> Accessories </li>
+                     </ul>
+                 `; 
+                 const listitem2_content= `
+                 <ul class="text-light ">
+                      <li class="text-secondary">Quick links</li>
+                      <li>Find a Store</li>
+                      <li>Orderstatus</li>
+                      <li>Apple Trade In</li>
+                      <li>Financing</li>
+                      <li>College Student Offer</li>
+                  </ul>
+              `; 
+              const listitem3_content= `
+              <ul class="text-light ">
+                   <li class="text-secondary">Shop Special Stores</li>
+                   <li>Certified Refurbished</li>
+                   <li>Education</li>
+                   <li>Business</li>
+                   <li>Veterans and Military</li>
+                   <li>Government</li>
+               </ul>
+           `; 
+                    listitem1.innerHTML= 
+                    listitem1_content;
+                    listitem2.innerHTML= 
+                    listitem2_content;
+                    listitem3.innerHTML= 
+                    listitem3_content;
+                }
+                else if(this.id === 'Support') {
+                    const listitem1_content= `
+                    <ul class="text-light ">
+                         <li> Shop the Latest </li>
+                         <li> Mac </li>
+                         <li> Ipad </li>
+                         <li> Iphone </li>
+                         <li> Apple Watch </li>
+                         <li> Apple Vision Pro </li>
+                         <li> Accessories </li>
+                     </ul>
+                 `; 
+                 const listitem2_content= `
+                 <ul class="text-light ">
+                      <li class="text-secondary">Quick links</li>
+                      <li>Find a Store</li>
+                      <li>Orderstatus</li>
+                      <li>Apple Trade In</li>
+                      <li>Financing</li>
+                      <li>College Student Offer</li>
+                  </ul>
+              `; 
+              const listitem3_content= `
+              <ul class="text-light ">
+                   <li class="text-secondary">Shop Special Stores</li>
+                   <li>Certified Refurbished</li>
+                   <li>Education</li>
+                   <li>Business</li>
+                   <li>Veterans and Military</li>
+                   <li>Government</li>
+               </ul>
+           `; 
+                    listitem1.innerHTML= 
+                    listitem1_content;
+                    listitem2.innerHTML= 
+                    listitem2_content;
+                    listitem3.innerHTML= 
+                    listitem3_content;
                 }
             });
             
@@ -143,16 +543,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Add click event to the hamburger menu button
     hamburgerMenu.addEventListener('click', function () {
-        if (!menuContainer) {
+        // if (menuContainer) {
             // Create the menu container only once
             menuContainer = createMenu();
-            ;
-        }
+          
+        // }
 
         // Toggle the display of the menu
         if (menuContainer.style.display === 'none' || menuContainer.style.display === '') {
            
-
             menuContainer.style.display = 'block';
         } else {
             menuContainer.style.display = 'none';
