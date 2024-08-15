@@ -128,13 +128,14 @@
 }
 .list-content-item1{
   flex-basis:100%;
-  margin-top: 30px;
+  margin-top: 5px;
   margin-left: 20px;
   
 }
 .list-content-item1 ul:first-child li {
   list-style-type: none;
-   font-size : 30px; 
+   font-size : 30px;
+   padding: 2px; 
 }
 
 .list-content-item2-3{
@@ -146,11 +147,12 @@
   margin: 10px;
   list-style-type: none;
   font-size : 20px;
+  padding: 2px;
 }
 
 .list-item1-sub li{
-  margin: 10px;
-  font-size: 15px;
+  
+  font-size: 17px;
   color: white;
   list-style-type: none;
 }
