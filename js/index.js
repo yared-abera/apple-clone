@@ -273,33 +273,38 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else if (this.id === 'Watch') {
                     const listitem1_content= `
                     <ul class="text-light ">
-                         <li> Shop the Latest </li>
-                         <li> Mac </li>
-                         <li> Ipad </li>
-                         <li> Iphone </li>
-                         <li> Apple Watch </li>
-                         <li> Apple Vision Pro </li>
-                         <li> Accessories </li>
+                         <li> Explore All Apple Watch</li>
+                         <li> Apple Watch Series 9</li>
+                         <li> Apple Watch Ultra 2</li>
+                         <li> Apple Watch  SE</li>
+                         <li> Apple Watch Nike </li>
+                         <li>Apple Watch Hermés</li>
+                     </ul>
+                     <ul class="list-item1-sub">
+                         <li>Compare Watch</li>
+                         <li>Why Apple Watch</li>
                      </ul>
                  `; 
                  const listitem2_content= `
                  <ul class="text-light ">
-                      <li class="text-secondary">Quick links</li>
-                      <li>Find a Store</li>
-                      <li>Orderstatus</li>
-                      <li>Apple Trade In</li>
+                      <li class="text-secondary">Shop Watch</li>
+                      <li>Shop Apple Watch</li>
+                      <li>Apple Watch Studio</li>
+                      <li>Apple Watch Bands</li>
+                      <li>Apple Watch Accessories</li>
+                      <li> Apple Trade In</li>
                       <li>Financing</li>
-                      <li>College Student Offer</li>
                   </ul>
               `; 
               const listitem3_content= `
               <ul class="text-light ">
-                   <li class="text-secondary">Shop Special Stores</li>
-                   <li>Certified Refurbished</li>
-                   <li>Education</li>
-                   <li>Business</li>
-                   <li>Veterans and Military</li>
-                   <li>Government</li>
+                   <li class="text-secondary">More from Watch</li>
+                   <li>Apple Watch Support </li>
+                   <li>AppleCare+</li>
+                   <li>watchOS 11 Preview</li>
+                   <li>Apple Watch for Your Kids</li>
+                   <li>Apps by Apple</li>
+                   <li>Apple Fitness+</li>
                </ul>
            `; 
                     listitem1.innerHTML= 
@@ -311,33 +316,29 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else if (this.id === 'Vision') {
                     const listitem1_content= `
                     <ul class="text-light ">
-                         <li> Shop the Latest </li>
-                         <li> Mac </li>
-                         <li> Ipad </li>
-                         <li> Iphone </li>
-                         <li> Apple Watch </li>
-                         <li> Apple Vision Pro </li>
-                         <li> Accessories </li>
+                         <li>Explore Apple Vision pro</li>
+                     </ul>
+                      <ul class="list-item1-sub">
+                         <li>Guided Tour</li>
+                         <li>Tech Specs</li>
                      </ul>
                  `; 
                  const listitem2_content= `
                  <ul class="text-light ">
-                      <li class="text-secondary">Quick links</li>
-                      <li>Find a Store</li>
-                      <li>Orderstatus</li>
-                      <li>Apple Trade In</li>
+                      <li class="text-secondary">Shop Vision</li>
+                      <li>Shop Apple Vision Pro</li>
+                      <li class="pt-3">Apple Vision Pro</li>
+                      <li class="pb-3">Accessories</li>
+                      <li>Book a Demo</li>
                       <li>Financing</li>
-                      <li>College Student Offer</li>
                   </ul>
               `; 
               const listitem3_content= `
               <ul class="text-light ">
-                   <li class="text-secondary">Shop Special Stores</li>
-                   <li>Certified Refurbished</li>
-                   <li>Education</li>
-                   <li>Business</li>
-                   <li>Veterans and Military</li>
-                   <li>Government</li>
+                   <li class="text-secondary">More fron Vision</li>
+                   <li>Apple Vision Pro Support</li>
+                   <li>AppleCare+</li>
+                   <li>visonOS 2 Preview</li>
                </ul>
            `; 
                     listitem1.innerHTML= 
