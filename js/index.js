@@ -135,33 +135,44 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else if (this.id === 'Mac') {
                     const listitem1_content= `
                     <ul class="text-light ">
-                         <li> Shop the Latest </li>
-                         <li> Mac </li>
-                         <li> Ipad </li>
-                         <li> Iphone </li>
-                         <li> Apple Watch </li>
-                         <li> Apple Vision Pro </li>
-                         <li> Accessories </li>
+                         <li>Explore All Mac</li>
+                         <li>MacBook Air</li>
+                         <li>MacBook Pro</li>
+                         <li>iMac</li>
+                         <li>Mac mini</li>
+                         <li>Mac Studio</li>
+                         <li>Mac Pro</li>
+                         <li>Displays</li>
+                     </ul>
+                     <ul class="list-item1-sub">
+                         <li>Compare Mac</li>
+                         <li>Mac Does That</li>
                      </ul>
                  `; 
                  const listitem2_content= `
                  <ul class="text-light ">
-                      <li class="text-secondary">Quick links</li>
-                      <li>Find a Store</li>
-                      <li>Orderstatus</li>
+                      <li class="text-secondary">Shop Mac</li>
+                      <li>Shop Mac</li>
+                      <li> Help Me Choose</li>
+                      <li>Mac Acccessories</li>
                       <li>Apple Trade In</li>
-                      <li>Financing</li>
-                      <li>College Student Offer</li>
+                      <li> Financing</li>
+                      <li> College Student Offer</li>
                   </ul>
               `; 
               const listitem3_content= `
               <ul class="text-light ">
-                   <li class="text-secondary">Shop Special Stores</li>
-                   <li>Certified Refurbished</li>
+                   <li class="text-secondary">More from Mac</li>
+                   <li>Mac Support</li>
+                   <li>AppleCare+ for Mac</li>
+                   <li>macOS Sequoia Preview</li>
+                   <li> Apple Intelligence</li>
+                   <li>Apps by Apple</li>
+                   <li>Continuity</li>
+                   <li>iCloud+</li>
+                   <li>Mac for Business</li>
                    <li>Education</li>
-                   <li>Business</li>
-                   <li>Veterans and Military</li>
-                   <li>Government</li>
+
                </ul>
            `; 
                     listitem1.innerHTML= 
@@ -173,20 +184,24 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else if (this.id === 'ipad') {
                     const listitem1_content= `
                     <ul class="text-light ">
-                         <li> Shop the Latest </li>
-                         <li> Mac </li>
-                         <li> Ipad </li>
-                         <li> Iphone </li>
-                         <li> Apple Watch </li>
-                         <li> Apple Vision Pro </li>
-                         <li> Accessories </li>
+                         <li> Explore All iPad</li>
+                         <li> iPad Pro </li>
+                         <li> iPad  Air</li>
+                         <li>iPad</li>
+                         <li> iPad mini </li>
+                         <li> ApplePencil</li>
+                         <li>Keyboards </li>
+                     </ul>
+                      <ul class="list-item1-sub">
+                         <li>Compare iPad</li>
+                         <li>Why iPad</li>
                      </ul>
                  `; 
                  const listitem2_content= `
                  <ul class="text-light ">
-                      <li class="text-secondary">Quick links</li>
-                      <li>Find a Store</li>
-                      <li>Orderstatus</li>
+                      <li class="text-secondary">Shop iPad</li>
+                      <li>Shop</li>
+                      <li>iPad Accessories</li>
                       <li>Apple Trade In</li>
                       <li>Financing</li>
                       <li>College Student Offer</li>
@@ -194,12 +209,13 @@ document.addEventListener('DOMContentLoaded', function () {
               `; 
               const listitem3_content= `
               <ul class="text-light ">
-                   <li class="text-secondary">Shop Special Stores</li>
-                   <li>Certified Refurbished</li>
+                   <li class="text-secondary">More from iPad</li>
+                   <li>iPad Support</li>
+                   <li>AppleCare+ for iPad</li>
+                   <li>iPadOS 18 Preview</li>
+                   <li>Apps by Apple</li>
+                   <li>iCloud+</li>
                    <li>Education</li>
-                   <li>Business</li>
-                   <li>Veterans and Military</li>
-                   <li>Government</li>
                </ul>
            `; 
                     listitem1.innerHTML= 
@@ -211,33 +227,41 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else if (this.id === 'iphone') {
                     const listitem1_content= `
                     <ul class="text-light ">
-                         <li> Shop the Latest </li>
-                         <li> Mac </li>
-                         <li> Ipad </li>
-                         <li> Iphone </li>
-                         <li> Apple Watch </li>
-                         <li> Apple Vision Pro </li>
-                         <li> Accessories </li>
+                         <li> Explore All iphone</li>
+                         <li>iPhone 15 Pro</li>
+                         <li> iPhone 15</li>
+                         <li> iPhone 14</li>
+                         <li> iPhone 13</li>
+                         <li> iPhone SE </li>
                      </ul>
+                     <ul class="list-item1-sub">
+                         <li>Compare iP</honeli>
+                         <li>Switch from Android</li>
+                     </ul>
+
                  `; 
                  const listitem2_content= `
                  <ul class="text-light ">
-                      <li class="text-secondary">Quick links</li>
-                      <li>Find a Store</li>
-                      <li>Orderstatus</li>
+                      <li class="text-secondary">Shop iPhone</li>
+                      <li>Shop iPhone</li>
+                      <li>iPhone Accessories</li>
                       <li>Apple Trade In</li>
+                      <li>Carriers Deals at Apple</li>
                       <li>Financing</li>
-                      <li>College Student Offer</li>
                   </ul>
               `; 
               const listitem3_content= `
               <ul class="text-light ">
-                   <li class="text-secondary">Shop Special Stores</li>
-                   <li>Certified Refurbished</li>
-                   <li>Education</li>
-                   <li>Business</li>
-                   <li>Veterans and Military</li>
-                   <li>Government</li>
+                   <li class="text-secondary">More from iPhone</li>
+                   <li>iPhone Support</li>
+                   <li>AppleCare+ for iPhone</li>
+                   <li>iOS 18 Preview</li>
+                   <li>Apple Intelligence</li>
+                   <li>Apps by Apple</li>
+                   <li>iPhone Privacy</li>
+                   <li>iCloud+</li>
+                   <li>Wallet,Pay,Card</li>
+                   <li>Siri</li>
                </ul>
            `; 
                     listitem1.innerHTML= 
