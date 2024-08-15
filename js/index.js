@@ -350,33 +350,30 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else if (this.id === 'Airpods') {
                     const listitem1_content= `
                     <ul class="text-light ">
-                         <li> Shop the Latest </li>
-                         <li> Mac </li>
-                         <li> Ipad </li>
-                         <li> Iphone </li>
-                         <li> Apple Watch </li>
-                         <li> Apple Vision Pro </li>
-                         <li> Accessories </li>
+                         <li>Explore All AirPods</li>
+                         <li> AirPods Pro 2nd<br> Generation</li>
+                         <li> AirPods 2nd generation</li>
+                         <li>AirPods 3nd generation</li>
+                         <li>AirPods Max</li>
                      </ul>
+                       <ul class="list-item1-sub">
+                         <li>Compare Airpods</li>
+                    
+                         </ul>
                  `; 
                  const listitem2_content= `
                  <ul class="text-light ">
-                      <li class="text-secondary">Quick links</li>
-                      <li>Find a Store</li>
-                      <li>Orderstatus</li>
-                      <li>Apple Trade In</li>
-                      <li>Financing</li>
-                      <li>College Student Offer</li>
+                      <li class="text-secondary">Shop Airpods</li>
+                      <li>Airpods Accessories</li>
+                       
                   </ul>
               `; 
               const listitem3_content= `
               <ul class="text-light ">
-                   <li class="text-secondary">Shop Special Stores</li>
-                   <li>Certified Refurbished</li>
-                   <li>Education</li>
-                   <li>Business</li>
-                   <li>Veterans and Military</li>
-                   <li>Government</li>
+                   <li class="text-secondary">More from Airpods</li>
+                   <li >Airpods Support</li>
+                   <li>AppleCare+ for <br>Headphones</li>
+                   <li>Apple Music</li>
                </ul>
            `; 
                     listitem1.innerHTML= 
