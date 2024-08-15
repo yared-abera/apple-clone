@@ -132,9 +132,9 @@
   margin-left: 20px;
   
 }
-.list-content-item1 ul li {
+.list-content-item1 ul:first-child li {
   list-style-type: none;
-  font-size : 30px;
+   font-size : 30px; 
 }
 
 .list-content-item2-3{
@@ -146,4 +146,11 @@
   margin: 10px;
   list-style-type: none;
   font-size : 20px;
-} 
+}
+
+.list-item1-sub li{
+  margin: 10px;
+  font-size: 15px;
+  color: white;
+  list-style-type: none;
+}
