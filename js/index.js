@@ -385,33 +385,35 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else if(this.id === 'Tv & Home') {
                     const listitem1_content= `
                     <ul class="text-light ">
-                         <li> Shop the Latest </li>
-                         <li> Mac </li>
-                         <li> Ipad </li>
-                         <li> Iphone </li>
-                         <li> Apple Watch </li>
-                         <li> Apple Vision Pro </li>
-                         <li> Accessories </li>
+                         <li> Explore Tv & Home</li>
+                         <li>Apple TV 4K</li>
+                         <li>HomePod</li>
+                         <li> HomePod mini </li>
+                         
                      </ul>
                  `; 
                  const listitem2_content= `
                  <ul class="text-light ">
-                      <li class="text-secondary">Quick links</li>
-                      <li>Find a Store</li>
-                      <li>Orderstatus</li>
-                      <li>Apple Trade In</li>
-                      <li>Financing</li>
-                      <li>College Student Offer</li>
+                      <li class="text-secondary">Shop Tv & Home</li>
+                      <li>Shop Apple TV 4K</li>
+                      <li>Shop HomePod</li>
+                      <li> Shop HomePod mini</li>
+                      <li> Shop Siri Remote</li>
+                      <li>Tv& Home Accessories</li>
                   </ul>
               `; 
               const listitem3_content= `
               <ul class="text-light ">
-                   <li class="text-secondary">Shop Special Stores</li>
-                   <li>Certified Refurbished</li>
-                   <li>Education</li>
-                   <li>Business</li>
-                   <li>Veterans and Military</li>
-                   <li>Government</li>
+                   <li class="text-secondary"> More from Tv & Home</li>
+                   <li>Apple TV Support</li>
+                   <li>HomePod Support</li>
+                   <li>AppleCare+</li>
+                   <li>Apple TV app</li>
+                   <li> Apple TV+</li>
+                   <li>Home app</li>
+                   <li> Apple Music</li>
+                   <li> Siri</li>
+                   <li>AirPlay</li>
                </ul>
            `; 
                     listitem1.innerHTML= 
@@ -425,74 +427,55 @@ document.addEventListener('DOMContentLoaded', function () {
                 else if(this.id === 'Entertainment') {
                     const listitem1_content= `
                     <ul class="text-light ">
-                         <li> Shop the Latest </li>
-                         <li> Mac </li>
-                         <li> Ipad </li>
-                         <li> Iphone </li>
-                         <li> Apple Watch </li>
-                         <li> Apple Vision Pro </li>
-                         <li> Accessories </li>
+                         <li>Explore Entertainment</li>
+                         <li>Apple One</li>
+                         <li>Apple TV+</li>
+                         <li> Apple Music</li>
+                         <li> Apple Arcade </li>
+                         <li> Apple Fitness+ </li>
+                         <li>Apple  News+ </li>
+                         <li>Apple Podcasts</li>
+                         <li>Apple Books</li>
+                         <li>Apple Store</li>
                      </ul>
                  `; 
                  const listitem2_content= `
                  <ul class="text-light ">
-                      <li class="text-secondary">Quick links</li>
-                      <li>Find a Store</li>
-                      <li>Orderstatus</li>
-                      <li>Apple Trade In</li>
-                      <li>Financing</li>
-                      <li>College Student Offer</li>
+                      <li class="text-secondary">Support</li>
+                      <li>Apple TV+ Support</li>
+                      <li>Apple Music Support</li>
+                       
                   </ul>
               `; 
-              const listitem3_content= `
-              <ul class="text-light ">
-                   <li class="text-secondary">Shop Special Stores</li>
-                   <li>Certified Refurbished</li>
-                   <li>Education</li>
-                   <li>Business</li>
-                   <li>Veterans and Military</li>
-                   <li>Government</li>
-               </ul>
-           `; 
+          
+        
                     listitem1.innerHTML= 
                     listitem1_content;
                     listitem2.innerHTML= 
                     listitem2_content;
-                    listitem3.innerHTML= 
-                    listitem3_content;
                 }
                 else if(this.id === 'Accessories') {
                     const listitem1_content= `
                     <ul class="text-light ">
-                         <li> Shop the Latest </li>
+                         <li> Shop All Accessories</li>
                          <li> Mac </li>
-                         <li> Ipad </li>
-                         <li> Iphone </li>
+                         <li> ipad </li>
+                         <li> iphone </li>
                          <li> Apple Watch </li>
                          <li> Apple Vision Pro </li>
-                         <li> Accessories </li>
+                         <li> AirPods </li>
+                         <li> TV & Home</li>
                      </ul>
                  `; 
                  const listitem2_content= `
                  <ul class="text-light ">
-                      <li class="text-secondary">Quick links</li>
-                      <li>Find a Store</li>
-                      <li>Orderstatus</li>
-                      <li>Apple Trade In</li>
-                      <li>Financing</li>
-                      <li>College Student Offer</li>
-                  </ul>
+                      <li class="text-secondary">Explore Accessories</li>
+                      <li>Made by Apple</li>
+                      <li>Beats by Dr.Dre</li>
+                      <li>AirTag</li>
+                      
               `; 
-              const listitem3_content= `
-              <ul class="text-light ">
-                   <li class="text-secondary">Shop Special Stores</li>
-                   <li>Certified Refurbished</li>
-                   <li>Education</li>
-                   <li>Business</li>
-                   <li>Veterans and Military</li>
-                   <li>Government</li>
-               </ul>
-           `; 
+             
                     listitem1.innerHTML= 
                     listitem1_content;
                     listitem2.innerHTML= 
@@ -503,33 +486,38 @@ document.addEventListener('DOMContentLoaded', function () {
                 else if(this.id === 'Support') {
                     const listitem1_content= `
                     <ul class="text-light ">
-                         <li> Shop the Latest </li>
+                      <li> iPhone </li>    
                          <li> Mac </li>
-                         <li> Ipad </li>
-                         <li> Iphone </li>
-                         <li> Apple Watch </li>
+                         <li> iPad </li>
+                         
+                         <li>  Watch </li>
                          <li> Apple Vision Pro </li>
-                         <li> Accessories </li>
+                         <li> Airpods </li>
+                         <li> Music</li>
+                         <li> TV </li>
                      </ul>
+                     <ul class="list-item1-sub">
+                         <li>Explore Support</li>
+                    
+                         </ul>
                  `; 
                  const listitem2_content= `
                  <ul class="text-light ">
-                      <li class="text-secondary">Quick links</li>
-                      <li>Find a Store</li>
-                      <li>Orderstatus</li>
-                      <li>Apple Trade In</li>
-                      <li>Financing</li>
-                      <li>College Student Offer</li>
+                     
                   </ul>
+                   <li class="text-secondary"> Get Help</li>
+                   <li> Check Coverage </li>
+                   <li>Repair</li>
+                   <li> Contact Us</li>
               `; 
               const listitem3_content= `
               <ul class="text-light ">
-                   <li class="text-secondary">Shop Special Stores</li>
-                   <li>Certified Refurbished</li>
-                   <li>Education</li>
-                   <li>Business</li>
-                   <li>Veterans and Military</li>
-                   <li>Government</li>
+                   <li class="text-secondary">Helpful Topics</li>
+                      <li>Get AppleCare+</li>
+                      <li> Apple ID & Password</li>
+                      <li>Billing &subscriptions</li>
+                      <li>Find My</li>
+                      <li>Accessibility</li>
                </ul>
            `; 
                     listitem1.innerHTML= 
