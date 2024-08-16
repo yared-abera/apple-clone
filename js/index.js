@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-        const items = ['Store', 'Mac', 'ipad', 'iphone', 'Watch', 'Vision', 'Airpods', 'Tv&Home', 'Entertainment', ' Accessories', 'Support'];
+        const items = ['Store', 'Mac', 'ipad', 'iphone', 'Watch', 'Vision', 'Airpods', 'Tv&Home', 'Entertainment', 'Accessories', 'Support'];
         items.forEach(function (item) {
             const li = document.createElement('li');
             li.id =item;
@@ -455,6 +455,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     listitem2_content;
                 }
                 else if(this.id === 'Accessories') {
+
                     const listitem1_content= `
                     <ul class="text-light ">
                          <li> Shop All Accessories</li>
@@ -473,6 +474,7 @@ document.addEventListener('DOMContentLoaded', function () {
                       <li>Made by Apple</li>
                       <li>Beats by Dr.Dre</li>
                       <li>AirTag</li>
+                  </ul>
                       
               `; 
              
@@ -480,8 +482,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     listitem1_content;
                     listitem2.innerHTML= 
                     listitem2_content;
-                    listitem3.innerHTML= 
-                    listitem3_content;
                 }
                 else if(this.id === 'Support') {
                     const listitem1_content= `
@@ -489,8 +489,7 @@ document.addEventListener('DOMContentLoaded', function () {
                       <li> iPhone </li>    
                          <li> Mac </li>
                          <li> iPad </li>
-                         
-                         <li>  Watch </li>
+                         <li> Watch </li>
                          <li> Apple Vision Pro </li>
                          <li> Airpods </li>
                          <li> Music</li>
@@ -503,12 +502,13 @@ document.addEventListener('DOMContentLoaded', function () {
                  `; 
                  const listitem2_content= `
                  <ul class="text-light ">
-                     
-                  </ul>
-                   <li class="text-secondary"> Get Help</li>
+                     <li class="text-secondary"> Get Help</li>
+                     <li>Community </li>
                    <li> Check Coverage </li>
                    <li>Repair</li>
                    <li> Contact Us</li>
+                  </ul>
+                   
               `; 
               const listitem3_content= `
               <ul class="text-light ">
