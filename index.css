@@ -113,17 +113,15 @@
   margin-left: 20px;
   
 }
-
 /* style for list container in the click event */
 .list-container{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height:auto;
+  height:100%;
   z-index: 2000;
   background-color: rgb(20, 20, 20);
-
      
 }
 .list-content-item1{
@@ -155,4 +153,13 @@
   font-size: 17px;
   color: white;
   list-style-type: none;
+}
+.img-1{
+  overflow: hidden;
+  height:600px;
+  margin-top:72px;
+  
+}
+.img-1 img{
+  transform: scale(2);
 }
