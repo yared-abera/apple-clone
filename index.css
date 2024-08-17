@@ -152,48 +152,90 @@
 }
 
 .list-item1-sub li{
-  
-  font-size: 17px;
+  font-size: 5px;
   color: white;
   list-style-type: none;
 }
 
 /*Style for main section begin*/
-.img-1{
+.img-container{
   height:600px; 
-  margin-top:50px;
-  
-  
-}
-.img-1 img{
-  
+  margin-top:48px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+
 }
 
-.overlay{
+.overlay1{
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  width: 300px;
+  height: 250px;
+  padding-top: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.overlay1 h1{
+ margin-left:10%;
+ font-weight: bolder;
+ 
+}
+.overlay1 p{
+  width: 300px;
+  height: 50px;
+  font-size: large;  
+}
+.overlay1 button{
+  width: 120px;
+  margin-left: 15%;
+  border-radius: 15px;
+  border: none;
+  font: size 10px;
+  padding: 1%;
+   
+}
+
+.overlay2{
   position: absolute;
   top: 10%;
   left: 30%;
-  padding-top: px;
   width: 300px;
   height: 250px;
-  
+  padding-top: 20px;
   color: white;
-  border: 2px solid white;
-  font-size: large;
-  font-weight: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;  
 }
 
-.overlay h1{
- margin-left:20%;
-}
-.overlay p{
-  width: 260px;
-  height: 50px;
-  border: 2px solid white;
-}
-.overlay p{
+.overlay2 h1{
+  margin-left:10%;
+  font-weight: bolder;
+  
+ }
+ .overlay2 p{
+   width: 300px;
+   height: 50px;
+   font-size: large;  
+ }
+ .overlay2 button{
+   width: 120px;
    
+   border-radius: 15px;
+   border: none;
+   font: size 10px;
+    
+ }
+ .button-container{
+   display: flex;
+ }
+.overlay2 .button-container #shop{
+  background-color: black;
+  color: rgb(35, 92, 145);
+  border: 1px solid rgb(35, 92, 145);
+  margin-left: 5px;
 }
