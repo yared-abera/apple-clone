@@ -23,7 +23,7 @@
 @media only screen and (min-width:992px) {
    
   .img-container-3 img{
-    width: 100%;
+    margin-left: 20%;
     height: 600px;
    
   }
@@ -36,6 +36,18 @@
         display:flex;
       
       }
+
+      .cards-container{
+         flex-direction:column;
+         border: 2px solid #305CDE;
+      }
+
+      .cards {
+       width: 100% !important;
+      }
+      /* #card2{
+        width: 100%;
+      } */
 
       .search-bag-container{
         display: flex;
@@ -264,11 +276,13 @@
 }
 
 .img-container-3 {
-  background-color: rgb(255, 247, 247);
+  border: 2px solid #305CDE; 
   height:900px;
+  
 }
 .img-container-3 img{
   transform: scale(0.6);
+  
 }
 
 .overlay3{
@@ -287,4 +301,59 @@
 .overlay3 button:hover{
   background-color: #305CDE;
   color: white;
+}
+/* style for the cards */
+
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cards{
+  width:49%;
+  height: 500px;
+  border: 1px solid black;
+
+}
+
+
+.cards .button-container #b1{
+  background-color: rgb(89, 111, 237);
+  color: white; 
+  border-radius: 10px;
+  border: none;
+} 
+.cards .button-container #b2{
+  border: 1px solid rgb(87, 107, 219);
+  color: rgb(87, 107, 219);
+  border-radius: 10px;
+  background:none;
+  margin-left: 10px;
+} 
+
+.cards .button-container #b2:hover{
+  background-color: rgb(64, 92, 255);
+  color: white;  
+}
+
+/* add the bg-image to the cards */
+#card1{
+  background-image: url("images/card1img.jpg");
+  background-size: cover;
+}
+#card2{
+  background-image: url("images/img_3.jpg");
+  background-size: cover;
+}
+
+#card3{
+  background-image: url("images/visioncard.jpg");
+  background-size: cover;
+}
+
+#card4{
+  background-image: url("images/img_7.jpg");
+  background-size: cover;
 }
