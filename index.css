@@ -330,7 +330,7 @@
   color: rgb(87, 107, 219);
   border-radius: 10px;
   background:none;
-  margin-left: 10px;
+  margin-left: 20px;
 } 
 
 .cards .button-container #b2:hover{
@@ -356,4 +356,20 @@
 #card4{
   background-image: url("images/img_7.jpg");
   background-size: cover;
+}
+#card5{
+  background-image: url("images/img_8.jpg");
+  background-size: cover;
+}
+#card6{
+  background-image: url("images/img_9.jpg");
+  background-size: cover;
+}
+/* styles for the text in the cards */
+.card-text{
+  width: 50%;
+  margin: auto;
+}
+#card4-card-text{
+ margin-top: 55%;
 }
