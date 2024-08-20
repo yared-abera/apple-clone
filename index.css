@@ -22,15 +22,9 @@
 
 @media only screen and (min-width:992px) {
    
-  .img-container-3 img{
-    margin-left: 20%;
-    height: 600px;
    
-  }
 
-  .overlay1{
-    top: 5%;
-    left: 30% !important;  
+   .overlay1{ 
     width: 500px !important;
   }
    
@@ -46,28 +40,26 @@
     margin-left: 25% !important;
   }
 
-  .overlay2{
-    top: 5% !important;
-    left: 35% !important;
-  }
   .overlay2 p{
+    margin-bottom: 0% !important;
     font-size: 25px !important;
-    width: 500px !important;
+    width:75% !important;
+    margin: auto !important;
     font-weight: bolder !important;
-    margin-bottom: 15%;
   }
   
-  .overlay2 h1{
+  .overlay2 h1{  
     font-size: 45px !important;
     font-weight: bolder !important;
+    margin-bottom: 0% !important;
   }
-
-    .overlay2 button{
-      
-      margin-left: 5% !important;
-      } 
-    
+    .overlay2 .button-container{
+      gap: 20px;  
+      width: 50%;
+      margin: auto;
     }
+    
+    } 
 
 @media only screen and (max-width:992px) {
     
@@ -78,6 +70,7 @@
       }
 
       .cards-container{
+        
          flex-direction:column;
       }
 
@@ -101,16 +94,15 @@
 }
 
 .menu-container {
-  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  /* height:auto; */
-
   background-color: rgb(20, 20, 20);
   z-index: 2000;
   padding: 10px;
-   
+  
 }
 
  
@@ -179,6 +171,9 @@
 }
 /* style for list container in the click event */
 .list-container{
+  position:fixed;
+  top: 0%;
+  left: 0%;
   width: 100%;
   height:100%;
   z-index: 2000;
@@ -217,7 +212,6 @@
 
 /*Style for main section begin*/
 .img-container{
-  height:600px; 
   margin-top:48px;
   display: flex;
   gap: 10px;
@@ -226,16 +220,12 @@
 }
 
 .overlay1{
-  /* position: absolute;
-  top: 5%;
-  left: 30%; */
-  width: 300px;
-  height: 250px;
+  margin: auto;
+  width: 50%;
   padding-top: 20px;
   color: white;
   display: flex;
   flex-direction: column;
- 
 }
 
 .overlay1 h1{
@@ -244,12 +234,12 @@
  
 }
 .overlay1 p{
-  width: 300px;
+  width: 100%;
   height: 50px;
   font-size: large;  
 }
 .overlay1 button{
-  width: 120px;
+  width: 45%;
   margin-left: 15%;
   border-radius: 15px;
   border: none;
@@ -257,46 +247,84 @@
   padding: 1%;
   
 }
-
-.img-container-2{
-   background:url(images/img_4.jpg);
+.img-container-1{
+  background:url(images/runners.jpeg);
   background-size: cover;
+  width: 100%;
+  height: 500px; 
+  background-position: center;
 }
-.img-container-2 img{
+.img-container-2{
+   background:url(images/iphone.jpg);
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 500px;
 }
 .overlay2{
-  /* position: absolute;
-  top: 10%;
-  left: 30%; */
-  width: 300px;
+  width: 50%;
+  margin: auto;
   height: 250px;
-  padding-top: 20px;
   color: white;
   display: flex;
   flex-direction: column;
 
 }
-
 .overlay2 h1{
   margin-left:10%;
   font-weight: bolder;
   
  }
+
+
  .overlay2 p{
    width: 300px;
-   height: 50px;
    font-size: large;  
  }
+
  .overlay2 button{
    width: 120px;
-   
    border-radius: 15px;
    border: none;
    font: size 10px;
-    
  }
+
+
+.img-container-3-p { 
+ width: 100%;
+ height: 600px;
+}
+
+.img-container-3 { 
+   background:url(images/img_2.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+
+}
+.overlay3{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin:auto;
+  margin-top: 10px;
+
+}
+.overlay3 button{
+  width: 70px;
+  border-radius: 15px;
+  padding:5px;
+  color: blue;
+  border: 1px solid blue;
+
+
+}
+
+.overlay3 button:hover{
+  background-color: #305CDE;
+  color: white;
+}
  .button-container{
    display: flex;
  }
@@ -305,45 +333,22 @@
   color: rgb(35, 92, 145);
   border: 1px solid rgb(35, 92, 145);
   margin-left: 5px;
-}z
+}
 
 .overlay2 .button-container #shop:hover{                                              
   background-color: rgb(0, 132, 255);
   color: white;
 }
 
-.img-container-3 { 
-  height:900px;
-}
-.img-container-3 img{
-  transform: scale(0.6);
-  
-}
 
-.overlay3{
-  position: absolute;
-  top: 88%;
-  left: 45%;
-}
-
-.overlay3 button{
-  width: 60px;
-  border-radius: 15px;
-  padding: 5%;
-  color: blue;
-  border: 1px solid blue;
-}
-.overlay3 button:hover{
-  background-color: #305CDE;
-  color: white;
-}
 /* style for the cards */
 
 .cards-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+   gap: 10px;
+   margin-top: 10px;
 }
 
 .cards{
@@ -378,6 +383,7 @@
   background-size: cover;
 }
 #card2{
+ 
   background-image: url("images/img_3.jpg");
   background-size: cover;
 }
@@ -408,27 +414,4 @@
  margin-top: 55%;
 }
 
-/*style of slider-img */
-/* .image-slider-container {
-  display: flex;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  width: 100%;
-  height: 500px;
-  gap: 10px;
-  background: #000;
-} */
-.image-slider-container {
-  display: flex; /* or grid */
-  overflow-x: scroll; /* Allows horizontal scrolling if necessary */
-  white-space: nowrap; /* Prevents line breaks between slides */
-}
-
-.image-slider {
-  width: 100px; /* Adjust width according to your needs */
-  height: 100px; /* Adjust height according to your needs */
-  margin-right: 10px; /* Space between slider items */
-  background-color: lightgray; /* Temporary background for visibility */
-  flex-shrink: 0; /* Prevents items from shrinking */
-}
-
+ 
