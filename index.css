@@ -1,15 +1,5 @@
  
-/* .search-bag{
-    background-color: rgb(12, 132, 237);
-    color: white;
-    padding: 20px;
-    display: flex;
-
-}
-
-.search-bag li{
-    margin-left: 20px;
-}   */
+ 
 .humberger-menu {
   display: none;
 }
@@ -77,10 +67,7 @@
       .cards {
        width: 100% !important;
       }
-      /* #card2{
-        width: 100%;
-      } */
-
+      
       .search-bag-container{
         display: flex;
         flex-direction: row;
@@ -423,12 +410,15 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
+  transform: translateX(-30%);
+  
 }
 
 .image-slider{
   background-color: black; 
+    flex:0 0 50%;
     height: 80%; 
-    margin: 0 20px;
+    margin: 0 10px;
     scroll-snap-align: center;
     display: flex;
     justify-content: center;
@@ -437,10 +427,9 @@
     text-align: center;
 }
 
-.image-slider.active{
-   
-  
-}
+ 
+
+
 
 
  
