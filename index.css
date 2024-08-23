@@ -415,51 +415,36 @@
 }
 
 /* styles for image slider */
-/* 
+   
 .image-slider-container{
   display: flex;
+  overflow-x: hidden;
+  width: 95vw;
+  height: 100vh;
+  align-items: center;
   justify-content: center;
-  margin-top: 5px;
-  overscroll-behavior-x: contain;
- 
-  
 }
+
 .image-slider{
-  background-image: url("images/img_9.jpg");
-
-  width: 500px;
-  height: 500px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 10px;
-} */
-
-.carousel{
-  height: 400px;
+  background-color: black; 
+    height: 80%; 
+    margin: 0 20px;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
 }
 
-.carousel-indicators{
-  background-color: #30de56;
-  display: block;
-}
-.carousel-item{
-  border: 2px solid black;
-  width: 400px;
-}
-#carousel-item2 {
-  background-image: url("images/slide-img2.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 500px;
-  
+.image-slider.active{
+   
   
 }
+
+
  
-#carousel-item3{
-  background-image: url("images/img_9.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
+
+ 
+ 
